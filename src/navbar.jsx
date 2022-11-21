@@ -1,9 +1,11 @@
+import logo from './logo.svg';
+
 const Navbar = () => {
     return (
-        <div className="fixed top-0 left-0 h-screen w-16 m-0
-                        flex flex-col bg-gray-900">
+        <div className="fixed top-0 left-0 h-screen w-32 m-0
+                        flex flex-col bg-neutral-800 rounded-r-lg">
 
-            <i>A</i>
+            <div>{logo}</div>
             <i>B</i>
             <i>C</i>
             <i>D</i>

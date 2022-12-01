@@ -1,5 +1,4 @@
-import Navbar from './components/Navbar';
-import Tables from './components/Tables'
+import Navbar from './global/Navbar';
 
 export default function App() {
   return (

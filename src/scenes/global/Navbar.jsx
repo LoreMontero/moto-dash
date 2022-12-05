@@ -4,7 +4,7 @@ import { EnvelopeIcon, Squares2X2Icon, CalendarIcon, RectangleStackIcon  } from 
 const Navbar = () => {
     return (
         <div className="fixed h-screen w-36
-                        flex flex-col bg-zinc-800  
+                        flex flex-col bg-zinc-800 
                         backdrop-filter gap-10">
 
             <div className="flex justify-center w-32 mt-4">
@@ -19,7 +19,7 @@ const Navbar = () => {
                         </div>
                     </li>
                     <li>
-                        <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-max">
+                        <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
                             <Squares2X2Icon className="w-4"/>
                             <span>Workspace</span>
                         </div>

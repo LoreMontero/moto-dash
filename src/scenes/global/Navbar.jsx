@@ -1,4 +1,4 @@
-import logo from '../logo.svg';
+import logo from '../../logo.svg';
 import { EnvelopeIcon, Squares2X2Icon, CalendarIcon, RectangleStackIcon  } from '@heroicons/react/24/solid';
 
 const Navbar = () => {
@@ -19,19 +19,19 @@ const Navbar = () => {
                         </div>
                     </li>
                     <li>
-                        <div className="flex justify-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
+                        <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-max">
                             <Squares2X2Icon className="w-4"/>
                             <span>Workspace</span>
                         </div>
                     </li>
                     <li>
-                        <div className="flex justify-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
+                        <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
                             <EnvelopeIcon className="w-4"/>
                             <span>Inbox</span>
                         </div>
                     </li>
                     <li> 
-                        <div className="flex justify-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
+                        <div className="flex justify-between text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
                             <CalendarIcon className="w-4"/>
                             <span>Events</span>
                         </div>

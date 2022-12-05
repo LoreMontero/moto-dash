@@ -1,6 +1,6 @@
 import Navbar from './scenes/global/Navbar';
 import { ColorModeContext, useMode } from './theme';
-import { CssBaseLine, ThemeProvider } from '@mui/material';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import Topbar from './scenes/global/Topbar';
 
 export default function App() {

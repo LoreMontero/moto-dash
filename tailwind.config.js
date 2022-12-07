@@ -9,9 +9,6 @@ module.exports = {
       'secondary': '#1e1e21',
       'blueAccent': '#3849e0'
     },
-    fontFamily: {
-      sans: ['']
-    },
   },
   plugins: [],
 }

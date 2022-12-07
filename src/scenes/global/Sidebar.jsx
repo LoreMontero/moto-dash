@@ -1,7 +1,7 @@
 import logo from '../../logo.svg';
 import { EnvelopeIcon, Squares2X2Icon, CalendarIcon, RectangleStackIcon  } from '@heroicons/react/24/solid';
 
-const Navbar = () => {
+const Sidebar = () => {
     return (
         <div className="fixed h-screen w-36
                         flex flex-col bg-zinc-800 
@@ -42,4 +42,4 @@ const Navbar = () => {
     );
 }
 
-export default Navbar;
+export default Sidebar;

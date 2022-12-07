@@ -8,7 +8,7 @@ const Sidebar = () => {
                         backdrop-filter gap-10">
 
             <div className="flex justify-center w-32 mt-4">
-                <img src={logo} alt="Motorsport Logo" />
+                 <img src={logo} alt="Motorsport Logo" />
             </div>
             <div className="flex flex-col p-5">
                 <ul>

@@ -7,7 +7,7 @@ const Sidebar = () => {
                         flex flex-col bg-zinc-800 
                         backdrop-filter gap-10">
 
-            <div className="flex justify-center w-32 mt-4">
+            <div className="flex justify-center h-18 w-full mt-4">
                  <img src={logo} alt="Motorsport Logo" />
             </div>
             <div className="flex flex-col p-5">

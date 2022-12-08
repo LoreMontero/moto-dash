@@ -1,6 +1,10 @@
+
+
 const Topbar = () => {
     return (
-        <div></div>
+        <div className="flex h-18 mt-0 bg-neutral-900">
+            
+        </div>
     );
 }
 

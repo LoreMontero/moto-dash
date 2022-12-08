@@ -3,41 +3,29 @@ import { EnvelopeIcon, Squares2X2Icon, CalendarIcon, RectangleStackIcon  } from 
 
 const Sidebar = () => {
     return (
-        <div className="fixed h-screen w-36
-                        flex flex-col bg-zinc-800 
-                        backdrop-filter gap-10">
+        <div className="">
+            <div className="fixed h-screen w-18
+                            flex flex-col bg-neutral-900
+                            backdrop-filter">
 
-            <div className="flex justify-center h-18 w-full mt-4">
-                 <img src={logo} alt="Motorsport Logo" />
+                <div className="flex items-center justify-center h-18 w-full mt-4 absolute top-0">
+                    <img src={logo} alt="Motorsport Logo" />
+                </div>
+                <div className="flex flex-col items-center p-5 m-auto gap-6">
+                    <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
+                        <RectangleStackIcon className="w-6"/>
+                    </div>
+                    <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
+                        <Squares2X2Icon className="w-6"/>
+                    </div>
+                    <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
+                        <EnvelopeIcon className="w-6"/>
+                    </div>
+                    <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
+                        <CalendarIcon className="w-6"/>
+                    </div>
+                </div>
             </div>
-            <div className="flex flex-col p-5">
-                <ul>
-                    <li>
-                        <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
-                            <RectangleStackIcon className="w-4"/>
-                            <span>Dashboard</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
-                            <Squares2X2Icon className="w-4"/>
-                            <span>Workspace</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
-                            <EnvelopeIcon className="w-4"/>
-                            <span>Inbox</span>
-                        </div>
-                    </li>
-                    <li> 
-                        <div className="flex justify-between text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
-                            <CalendarIcon className="w-4"/>
-                            <span>Events</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>    
         </div>
     );
 }

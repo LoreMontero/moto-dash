@@ -7,7 +7,7 @@ module.exports = {
     extenf: {
       spacing: {
         18: "4.5rem"
-      }
+      },
     },
   },
 

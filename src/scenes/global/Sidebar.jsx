@@ -4,11 +4,11 @@ import { EnvelopeIcon, Squares2X2Icon, CalendarIcon, RectangleStackIcon  } from 
 const Sidebar = () => {
     return (
         <div className="">
-            <div className="fixed h-screen w-18
+            <div className="fixed h-screen w-20
                             flex flex-col bg-neutral-900
                             backdrop-filter">
 
-                <div className="flex items-center justify-center h-18 w-full mt-4 absolute top-0">
+                <div className="flex items-center justify-center h-18 w-full mt-4 absolute top-0 ">
                     <img src={logo} alt="Motorsport Logo" />
                 </div>
                 <div className="flex flex-col items-center p-5 m-auto gap-6">

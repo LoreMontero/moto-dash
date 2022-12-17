@@ -1,8 +1,8 @@
 const Tables = () => {
     return (
-        <div className="bg-gray-800 opacity-75 rounded-2xl p-5">
-            <table className="table-fixed rounded-2xl">
-                <thead className="bg-neutral-800">
+        <div className="border-black border-2 rounded-2xl p-5">
+            <table className="table-auto">
+                <thead className="border-b-2 border-black">
                     <tr>
                         <th>
                             Task Name

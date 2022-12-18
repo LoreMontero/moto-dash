@@ -1,17 +1,11 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
-import Sidebar from './scenes/global/Sidebar';
-import Topbar from './scenes/global/Topbar';
-import Dashboard from './scenes/Dashboard';
+import { BrowserRouter } from 'react-router-dom';
+import Layout from './components/Layout';
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Sidebar />
-      <Topbar />
-      <Routes>
-        <Route exact path="/" component={Dashboard} />
-      </Routes>
+      <Layout />
     </BrowserRouter>
   );
 }

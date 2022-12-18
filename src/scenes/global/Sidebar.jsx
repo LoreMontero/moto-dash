@@ -1,5 +1,6 @@
+import React from 'react';
 import logo from '../../logo.svg';
-import { EnvelopeIcon, Squares2X2Icon, CalendarIcon, RectangleStackIcon  } from '@heroicons/react/24/solid';
+import { EnvelopeIcon, Squares2X2Icon, CalendarIcon, RectangleStackIcon } from '@heroicons/react/24/solid';
 
 const Sidebar = () => {
     return (

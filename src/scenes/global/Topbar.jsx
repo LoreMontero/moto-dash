@@ -1,3 +1,4 @@
+import React from 'react';
 import { MagnifyingGlassIcon, BellIcon } from '@heroicons/react/24/solid';
 import motorHead from '../../motorHead.jpg'; 
 

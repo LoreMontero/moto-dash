@@ -4,7 +4,7 @@ import motorHead from '../../motorHead.jpg';
 
 const Topbar = () => {
     return (
-        <div className="flex fixed items-center justify-evenly mt-0 h-16 w-screen">
+        <div className="flex fixed items-center justify-evenly mt-0 ml-20 h-16 w-screen">
             <div className="flex justify-center p-5">
                 <h1 className="rubic font-bold text-xl">Dashboard</h1>
             </div>

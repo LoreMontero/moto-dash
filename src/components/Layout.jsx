@@ -8,13 +8,11 @@ const Layout = () => {
     return (
         <div className="flex h-screen font-sans bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-violet-800 via-cyan-100 to-violet-100">
             <Sidebar />
-            <div className="flex flex-col h-screen w-screen ml-20">
-                <Topbar />
-                <div className="flex flex-col justify-evenly h-screen">
-                    <Routes>
-                        <Route path="/" element={<Dashboard />}/>
-                    </Routes>
-                </div>
+            <Topbar />
+            <div className="flex flex-col justify-evenly ml-20 h-screen w-screen">
+                <Routes>
+                    <Route path="/" element={<Dashboard />}/>
+                </Routes>
             </div>
         </div>
   );

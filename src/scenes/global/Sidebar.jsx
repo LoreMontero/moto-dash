@@ -13,16 +13,24 @@ const Sidebar = () => {
                 </div>
                 <div className="flex flex-col items-center p-5 m-auto gap-6">
                     <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
-                        <RectangleStackIcon className="w-6"/>
+                        <a href="">
+                            <RectangleStackIcon className="w-6"/>
+                        </a>
                     </div>
                     <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
-                        <Squares2X2Icon className="w-6"/>
+                        <a href="">
+                            <Squares2X2Icon className="w-6"/> 
+                        </a>
                     </div>
                     <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
-                        <EnvelopeIcon className="w-6"/>
+                        <a href="">
+                            <EnvelopeIcon className="w-6"/>
+                        </a>
                     </div>
                     <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
-                        <CalendarIcon className="w-6"/>
+                        <a href="">
+                            <CalendarIcon className="w-6"/>
+                        </a>
                     </div>
                 </div>
             </div>

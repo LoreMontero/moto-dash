@@ -1,7 +1,11 @@
+import Tables from '../components/Tables';
+
 const Workspace = () => {
     return (
-        <div className="">
-
+        <div className="flex flex-col">
+            <Tables />
+            <Tables />
+            <Tables />
         </div>
     );
 }

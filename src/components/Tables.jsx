@@ -1,6 +1,6 @@
 const Tables = (props) => {
     return (
-        <div className="flex justify border-black border-2 rounded-2xl p-5">
+        <div className="flex justify-center border-black border-2 rounded-2xl p-5">
             <table className="table-auto">
                 <thead className="border-b-2 border-black">
                     <tr className="flex justify-between">

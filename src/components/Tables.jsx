@@ -1,29 +1,29 @@
-const Tables = () => {
+const Tables = (props) => {
     return (
-        <div className="border-black border-2 rounded-2xl p-5">
+        <div className="flex justify border-black border-2 rounded-2xl p-5">
             <table className="table-auto">
                 <thead className="border-b-2 border-black">
-                    <tr>
-                        <th>
+                    <tr className="flex justify-between">
+                        <th className="px-5">
                             Task Name
                         </th>
-                        <th>
+                        <th className="px-5">
                             Status
                         </th>
-                        <th>
+                        <th className="px-5">
                             Files
                         </th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>
+                    <tr className="flex justify-between">
+                        <td className="px-5">
                             Add Rocket boosters
                         </td>
-                        <td>
+                        <td className="px-5">
                             In progress
                         </td>
-                        <td>
+                        <td className="px-5">
                             none
                         </td>
                     </tr>

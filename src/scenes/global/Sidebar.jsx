@@ -4,9 +4,7 @@ import { EnvelopeIcon, Squares2X2Icon, CalendarIcon, RectangleStackIcon } from '
 
 const Sidebar = () => {
     return (
-            <div className="fixed h-screen w-20
-                            flex flex-col bg-neutral-900
-                            backdrop-filter">
+            <div className="fixed h-screen w-20 flex flex-col bg-neutral-900">
 
                 <div className="flex items-center justify-center h-18 w-full mt-4 absolute top-0 ">
                     <img src={logo} alt="Motorsport Logo" />

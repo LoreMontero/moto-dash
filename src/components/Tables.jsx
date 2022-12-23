@@ -1,30 +1,30 @@
 const Tables = (props) => {
     return (
-        <div className="flex justify-center border-black border-2 rounded-2xl p-5">
+        <div className="flex justify-center bg-neutral-900 rounded-2xl p-5">
             <table className="table-auto">
-                <thead className="border-b-2 border-black">
+                <thead className="border-b border-gray-700">
                     <tr className="flex justify-between">
-                        <th className="px-5">
+                        <th className="text-white px-5">
                             Task Name
                         </th>
-                        <th className="px-5">
+                        <th className="text-white px-5">
                             Status
                         </th>
-                        <th className="px-5">
+                        <th className="text-white px-5">
                             Files
                         </th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr className="flex justify-between">
-                        <td className="px-5">
-                            Add Rocket boosters
+                        <td className="text-gray-400 px-5">
+                            Rocket boosters
                         </td>
-                        <td className="px-5">
+                        <td className="text-gray-400 px-5">
                             In progress
                         </td>
-                        <td className="px-5">
-                            none
+                        <td className="text-gray-400 px-5">
+                             none
                         </td>
                     </tr>
                 </tbody>

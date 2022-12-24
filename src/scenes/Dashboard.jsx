@@ -5,11 +5,23 @@ const Dashboard = () => {
   return (
     <div className="flex flex-col justify-evenly h-screen">
         <div className="flex justify-around">
-            <Tables />
-            <Tables />
+            <Tables
+              name="Add Props"
+              status="Finished"
+              file="N/A"
+            />
+            <Tables
+              name="Create Database"
+              status="Not Started"
+              file="N/A"
+            />
         </div>
         <div className="flex justify-center">
-            <Tables />
+            <Tables
+              name="Integrate Server"
+              status="Not Started"
+              file="N/A"
+            />
         </div> 
     </div>
   );

@@ -1,6 +1,6 @@
 const Tables = (props) => {
     return (
-        <div className="flex justify-center bg-neutral-900 rounded-2xl p-5">
+        <div className="flex justify-center bg-neutral-900 shadow-md shadow-gray-800 rounded-2xl p-5">
             <table className="table-auto">
                 <thead className="border-b border-gray-700">
                     <tr className="flex justify-between">
@@ -18,13 +18,13 @@ const Tables = (props) => {
                 <tbody>
                     <tr className="flex justify-between">
                         <td className="text-gray-400 px-5">
-                            Rocket boosters
+                            {props.name}
                         </td>
                         <td className="text-gray-400 px-5">
-                            In progress
+                            {props.status}
                         </td>
                         <td className="text-gray-400 px-5">
-                             none
+                             {props.file}
                         </td>
                     </tr>
                 </tbody>

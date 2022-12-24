@@ -19,10 +19,10 @@ const Topbar = () => {
                     />
             </div>
             <div className="flex justify-center items-center gap-2">
-                <button className="p-2 bg-gray-800 rounded-2xl hover:bg-blue-600">
+                <button className="p-2 bg-gray-800 rounded-2xl hover:bg-blue-600 hover:scale-110 duration-300">
                     <BellIcon className="fill-white w-5"/>
                 </button>
-                <button className="flex items-center gap-2 pr-2 hover:bg-blue-600 round-2xl bg-gray-800 rounded-full">
+                <button className="flex items-center gap-2 pr-2 duration-300 hover:bg-blue-600 hover:scale-110 round-2xl bg-gray-800 rounded-full">
                     <img src={motorHead} alt="pfp" className="w-10 ml-0 rounded-full" />
                     <span className="text-gray-300 rubic">Lorenzo</span>
                 </button>

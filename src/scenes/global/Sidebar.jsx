@@ -10,22 +10,22 @@ const Sidebar = () => {
                     <img src={logo} alt="Motorsport Logo" />
                 </div>
                 <div className="flex flex-col items-center p-5 m-auto gap-6">
-                    <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
+                    <div className="flex items-center text-white hover:bg-blue-600 hover:scale-110 rounded-2xl duration-300 p-2 w-fit">
                         <a href="/">
                             <RectangleStackIcon className="w-6"/>
                         </a>
                     </div>
-                    <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
+                    <div className="flex items-center text-white hover:bg-blue-600 hover:scale-110 rounded-2xl duration-300 p-2 w-fit">
                         <a href="/Workspace">
                             <Squares2X2Icon className="w-6"/> 
                         </a>
                     </div>
-                    <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
+                    <div className="flex items-center text-white hover:bg-blue-600 hover:scale-110 rounded-2xl duration-300 p-2 w-fit">
                         <a href="/Inbox">
                             <EnvelopeIcon className="w-6"/>
                         </a>
                     </div>
-                    <div className="flex items-center text-white hover:bg-blue-600 rounded-2xl duration-300 p-2 w-fit">
+                    <div className="flex items-center text-white hover:bg-blue-600 hover:scale-110 rounded-2xl duration-300 p-2 w-fit">
                         <a href="/Events">
                             <CalendarIcon className="w-6"/>
                         </a>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Sidebar from '../scenes/global/Sidebar';
-import Topbar from '../scenes/global/Topbar';
 import Dashboard from '../scenes/Dashboard';
 import Workspace from '../scenes/Workspace';
 import Inbox from '../scenes/Inbox';

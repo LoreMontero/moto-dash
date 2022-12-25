@@ -2,11 +2,11 @@ import React from 'react';
 import { MagnifyingGlassIcon, BellIcon } from '@heroicons/react/24/solid';
 import motorHead from '../../motorHead.jpg'; 
 
-const Topbar = () => {
+const Topbar = (props) => {
     return (
         <div className="flex fixed items-center justify-evenly border-b border-gray-800 mt-0 h-16 w-screen">
             <div className="flex justify-center p-5">
-                <h1 className=" text-white rubic font-bold text-xl">Dashboard</h1>
+                <h1 className=" text-white rubic font-bold text-xl">{props.page}</h1>
             </div>
             <div className="relative p-2 border-solid border-2 border-gray-800 rounded-2xl">
                 <span className="absolute inset-y-0 flex items-center px-3 pointer-events-none">

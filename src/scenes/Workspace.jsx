@@ -4,7 +4,7 @@ import Topbar from './global/Topbar';
 const Workspace = () => {
     return (
         <div className="flex flex-col ml-20 h-screen w-screen">
-            <Topbar />
+            <Topbar page="Workspace"/>
             <div className="flex flex-col justify-evenly items-center h-screen">
                 <Tables 
                     name="Create Database"

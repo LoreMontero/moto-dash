@@ -11,15 +11,12 @@ const Layout = () => {
     return (
         <div className="flex h-screen font-sans bg-black">
             <Sidebar />
-            <Topbar />
-            <div className="flex flex-col justify-evenly ml-20 h-screen w-screen">
-                <Routes>
-                    <Route path="/" element={<Dashboard />}/>
-                    <Route path="/Workspace" element={<Workspace />}/>
-                    <Route path="/Inbox" element={<Inbox />}/>
-                    <Route path="/Events" element={<Events />}/>
-                </Routes>
-            </div>
+            <Routes>
+                <Route path="/" element={<Dashboard />}/>
+                <Route path="/Workspace" element={<Workspace />}/>
+                <Route path="/Inbox" element={<Inbox />}/>
+                <Route path="/Events" element={<Events />}/>
+            </Routes>
         </div>
   );
 }

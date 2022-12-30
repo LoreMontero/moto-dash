@@ -1,4 +1,11 @@
+import { useState } from 'react';
+
 const Tables = (props) => {
+    const [ taskView, setTaskView] = useState(false);
+    const viewTask = () => {
+
+    }
+
     return (
         <div className="flex justify-center bg-neutral-900 shadow-md shadow-gray-800 w-fit rounded-2xl p-5">
             <table className="table-auto">

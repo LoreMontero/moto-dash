@@ -1,7 +1,10 @@
-import { useState } from 'react';
-import editTask from './editTask';
+import React from 'react';
+import {useState} from 'react';
+import Modal from './Modal';
 
 const Tables = (props) => {
+    const [show, setShow] = useState(false);
+
     return (
         <div>
             <div>
@@ -25,7 +28,7 @@ const Tables = (props) => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr className="flex justify-between">
+                        <tr onClick={() => setShow(!show)} className="flex justify-between hover:bg-neutral-700 cursor-pointer">
                             <td className="text-gray-400 px-5">
                                 {props.name}
                             </td>
@@ -39,6 +42,12 @@ const Tables = (props) => {
                     </tbody>
                 </table>
             </div>
+            {show && (
+                <Modal 
+                    show={show}
+                    close={() => setShow(false)}
+                />
+            )}
         </div>
     );
 }

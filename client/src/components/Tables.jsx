@@ -10,6 +10,7 @@ const Tables = (props) => {
             <div>
                 <h2 className="rubic text-white">
                     {props.title}
+                    Hello
                 </h2>
             </div>
             <div className="flex justify-center bg-neutral-900 shadow-md shadow-neutral-800 w-fit rounded-2xl p-5">

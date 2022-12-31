@@ -39,15 +39,13 @@ const Tables = (props) => {
                                 {props.file}
                             </td>
                         </tr>
+                        <Modal 
+                            show={show}
+                            close={() => setShow(false)}
+                        />
                     </tbody>
                 </table>
             </div>
-            {show && (
-                <Modal 
-                    show={show}
-                    close={() => setShow(false)}
-                />
-            )}
         </div>
     );
 }

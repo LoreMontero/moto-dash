@@ -1,4 +1,4 @@
-import Tables from '../components/Tables';
+import TaskTables from '../components/Table/TaskTables';
 import Topbar from './global/Topbar';
 
 const Workspace = () => {
@@ -6,17 +6,17 @@ const Workspace = () => {
         <div className="flex flex-col ml-20 h-screen w-screen">
             <Topbar page="Workspace"/>
             <div className="flex flex-col justify-evenly items-center h-screen">
-                <Tables 
+                <TaskTables 
                     name="Create Database"
                     status="Not Started"
                     file="N/A"
                 />
-                <Tables 
+                <TaskTables 
                     name="Integrate Server"
                     status="Not Started"
                     file="N/A"
                 />
-                <Tables 
+                <TaskTables 
                     name="Update Props"
                     status="Not Started"
                     file="N/A"

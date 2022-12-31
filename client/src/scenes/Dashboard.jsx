@@ -1,5 +1,5 @@
 import React from 'react';
-import Tables from '../components/Tables';
+import TaskTables from '../components/Table/TaskTables';
 import Topbar from './global/Topbar';
 
 const Dashboard = () => {
@@ -8,24 +8,10 @@ const Dashboard = () => {
       <Topbar page="Dashboard"/>
       <div className="flex flex-col justify-evenly h-screen">
         <div className="flex justify-around">
-          <Tables
+          <TaskTables
             title="Your Tasks"
             name="Add Props"
             status="Finished"
-            file="N/A"
-          />
-          <Tables
-            title="Completed Tasks"
-            name="Create Database"
-            status="Not Started"
-            file="N/A"
-          />
-        </div>
-        <div className="flex justify-center">
-          <Tables
-            title="Upcomming Tasks"
-            name="Integrate Server"
-            status="Not Started"
             file="N/A"
           />
         </div> 

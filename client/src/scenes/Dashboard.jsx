@@ -11,7 +11,7 @@ const Dashboard = () => {
       <div className = "flex flex-col justify-end items-end p-24 ">
         <button 
           onClick = {()=>navigate("/Order")}
-          className = "bg-blue-700 text-white font-semibold border-blue-700 h-10 w-24 rounded-lg ease-in duration-300 hover:bg-white hover:text-blue-700">Add</button>
+          className = "bg-gray-800 text-white font-semibold border-blue-700 h-10 w-24 rounded-lg ease-in duration-300 hover:bg-white hover:text-black">Add</button>
       </div>
       <div className="flex flex-col justify-evenly ">
         <div className="flex justify-around">

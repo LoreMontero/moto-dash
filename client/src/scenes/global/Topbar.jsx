@@ -4,7 +4,7 @@ import motorHead from '../../motorHead.jpg';
 
 const Topbar = (props) => {
     return (
-        <div className="flex fixed items-center justify-evenly border-b border-gray-800 mt-0 h-16 w-screen">
+        <div className="flex fixed items-center justify-evenly border-b border-gray-800 mt-0 h-16 bg-black w-screen">
             <div className="flex justify-center p-5">
                 <h1 className=" text-white rubic font-bold text-xl">{props.page}</h1>
             </div>

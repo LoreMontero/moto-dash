@@ -12,7 +12,7 @@ const Tables = (props) => {
                     {props.title}
                 </h2>
             </div>
-            <div className="flex justify-center bg-neutral-900 shadow-md shadow-gray-800 w-fit rounded-2xl p-5">
+            <div className="flex justify-center bg-neutral-900 shadow-md shadow-neutral-800 w-fit rounded-2xl p-5">
                 <table className="table-auto">
                     <thead className="border-b border-gray-700">
                         <tr className="flex justify-between">

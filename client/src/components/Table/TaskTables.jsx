@@ -1,8 +1,8 @@
 import React from 'react';
 import {useState} from 'react';
-import Modal from './Modal';
+import Modal from '../Modal';
 
-const Tables = (props) => {
+const TaskTables = (props) => {
     const [show, setShow] = useState(false);
 
     return (
@@ -17,13 +17,19 @@ const Tables = (props) => {
                     <thead className="border-b border-gray-700">
                         <tr className="flex justify-between">
                             <th className="text-white px-5">
-                                Task Name
+                                Order
                             </th>
                             <th className="text-white px-5">
                                 Status
                             </th>
                             <th className="text-white px-5">
-                                Files
+                                Owner
+                            </th>
+                            <th className="text-white px-5">
+                                Assigned
+                            </th>
+                            <th className="text-white px-5">
+                                Subsystem
                             </th>
                         </tr>
                     </thead>
@@ -50,4 +56,4 @@ const Tables = (props) => {
     );
 }
 
-export default Tables;
+export default TaskTables;

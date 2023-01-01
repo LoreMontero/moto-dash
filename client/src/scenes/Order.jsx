@@ -25,9 +25,19 @@ const Order = () => {
                                 <input type= "text" placeholder = "Assigne Email" className = "text-white p-2.5 border-gray-300 bg-gray-900 w-full rounded-lg"/>
                             </div>
                             <div class = "px-5">
-                                <label for = "email" className = "text-start block text-base text-white font-semibold py-2.5">Name</label>
-                                <input type= "text" placeholder = "Subsystem" className = "text-white p-2.5 border-gray-300 bg-gray-900 w-full rounded-lg"/>
+                                <label for = "email" className = "text-start block text-base text-white font-semibold py-2.5">Name of Assigne</label>
+                                <input type= "text" placeholder = "Name of Assigne" className = "text-white p-2.5 border-gray-300 bg-gray-900 w-full rounded-lg"/>
                             </div>
+                            
+                        </div>
+                        <div>
+                            <label for = "email" className = "text-start block text-base text-white font-semibold py-5">Subsystem</label>
+                            <select id= "dropdownDefault" data-dropdown-toggle ="dropdown" placeholder = "Order" className = "text-white p-2.5 border-gray-300 bg-gray-900 w-full rounded-lg">
+                                <option>Propulsion</option>
+                                <option>ACE</option>
+                                <option>Vehicle Dynamics</option>
+                                
+                            </select>
                             
                         </div>
                        {/*<div>

@@ -8,9 +8,9 @@ const Topbar = (props) => {
             <div className="flex justify-center p-5">
                 <h1 className=" text-white rubic font-bold text-xl">{props.page}</h1>
             </div>
-            <div className="relative p-2 border-solid border-2 border-gray-800 rounded-2xl">
+            <div className="relative p-2 border-solid border-2 border-neutral-700 rounded-2xl">
                 <span className="absolute inset-y-0 flex items-center px-3 pointer-events-none">
-                    <MagnifyingGlassIcon className="fill-gray-700 w-5"/> 
+                    <MagnifyingGlassIcon className="fill-neutral-700 w-5"/> 
                 </span>
                 <input 
                     type="text" 
@@ -19,10 +19,10 @@ const Topbar = (props) => {
                     />
             </div>
             <div className="flex justify-center items-center gap-2">
-                <button className="p-2 bg-gray-800 rounded-2xl hover:bg-blue-600 hover:scale-110 duration-300">
+                <button className="p-2 bg-neutral-800 rounded-2xl hover:bg-blue-600 hover:scale-110 duration-300">
                     <BellIcon className="fill-white w-5"/>
                 </button>
-                <button className="flex items-center gap-2 pr-2 duration-300 hover:bg-blue-600 hover:scale-110 round-2xl bg-gray-800 rounded-full">
+                <button className="flex items-center gap-2 pr-4 duration-300 hover:bg-blue-600 hover:scale-110 bg-neutral-800 rounded-full">
                     <img src={motorHead} alt="pfp" className="w-10 ml-0 rounded-full" />
                     <span className="text-gray-300 rubic">Lorenzo</span>
                 </button>

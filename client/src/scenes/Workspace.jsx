@@ -7,19 +7,19 @@ const Workspace = () => {
             <Topbar page="Workspace"/>
             <div className="flex flex-col justify-evenly items-center h-screen">
                 <TaskTables 
-                    name="Create Database"
+                    order="Create Database"
                     status="Not Started"
-                    file="N/A"
+                    owner="N/A"
                 />
                 <TaskTables 
-                    name="Integrate Server"
+                    order="Integrate Server"
                     status="Not Started"
-                    file="N/A"
+                    owner="N/A"
                 />
                 <TaskTables 
-                    name="Update Props"
+                    order="Update Props"
                     status="Not Started"
-                    file="N/A"
+                    owner="N/A"
                 />
             </div>
         </div>

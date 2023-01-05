@@ -6,6 +6,7 @@ import { useState } from 'react';
 function Modal({ show, close, order }) {
     const progress = ["Not Started", "In Progress", "Completed"];
     const [editing, setEditing] = useState(false);
+    const closeEdit = () => setEditing(false);
     
     if (!show) return null;
 
@@ -32,7 +33,7 @@ function Modal({ show, close, order }) {
                                         placeholder="Order" 
                                     />
                                 ) : (
-                                    <div onClick={() => setEditing(true)}>{order}</div>
+                                    <div onClick={() => setEditing(true)} className="cursor-pointer">{order}</div>
                                 )}
                             </div>
                         </div>
@@ -42,7 +43,7 @@ function Modal({ show, close, order }) {
                                 <input
                                     className="rounded-xl bg-transparent px-4 text-sm focus:text-white focus:outline-none"
                                     type="text"
-                                    placeholder="Order" 
+                                    placeholder="Drop Down" 
                                 />
                             </div>
                         </div>
@@ -52,7 +53,7 @@ function Modal({ show, close, order }) {
                                 <input
                                     className="rounded-xl bg-transparent px-4 text-sm focus:text-white focus:outline-none"
                                     type="text"
-                                    placeholder="Order" 
+                                    placeholder="Drop Down" 
                                 />
                             </div>
                         </div>
@@ -62,7 +63,7 @@ function Modal({ show, close, order }) {
                                 <input
                                     className="rounded-xl bg-transparent px-4 text-sm focus:text-white focus:outline-none"
                                     type="text"
-                                    placeholder="Order" 
+                                    placeholder="Drop Down" 
                                 />
                             </div>
                         </div>
@@ -72,17 +73,17 @@ function Modal({ show, close, order }) {
                                 <input
                                     className="rounded-xl bg-transparent px-4 text-sm focus:text-white focus:outline-none"
                                     type="text"
-                                    placeholder="Order" 
+                                    placeholder="Subsystem Name" 
                                 />
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-between items-center mb-0 h-16 w-full px-5 text-white">
-                    <button className="px-4 py-2 rounded-2xl bg-neutral-700 duration-300 hover:bg-red-600 hover:scale-110">
+                <div className="flex justify-between items-center mb-0 h-16 w-full px-5 py-3 text-white">
+                    <button onClick={close} className="px-4 py-2 rounded-2xl bg-neutral-700 duration-300 hover:bg-red-600 hover:scale-110">
                         Cancel
                     </button>
-                    <button className="px-4 py-2 rounded-2xl bg-neutral-700 duration-300 hover:bg-blue-600 hover:scale-110">
+                    <button onClick={close} className="px-4 py-2 rounded-2xl bg-neutral-700 duration-300 hover:bg-blue-600 hover:scale-110">
                         Save Changes
                     </button>
                 </div>

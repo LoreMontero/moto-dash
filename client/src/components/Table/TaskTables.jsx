@@ -34,7 +34,7 @@ const TaskTables = (props) => {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr onClick={() => setShow(!show)} className="flex justify-between hover:bg-neutral-700 cursor-pointer">
+                        <tr onClick={() => setShow(!show)} className="flex justify-between rounded-b-sm hover:bg-neutral-700 cursor-pointer">
                             <td className="text-gray-400 px-5">
                                 {props.name}
                             </td>
@@ -48,6 +48,7 @@ const TaskTables = (props) => {
                         <Modal 
                             show={show}
                             close={() => setShow(false)}
+                            order={props.name}
                         />
                     </tbody>
                 </table>

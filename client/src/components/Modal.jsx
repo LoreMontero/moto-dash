@@ -8,16 +8,19 @@ function Modal({ show, close, order }) {
     const [editing, setEditing] = useState(false);
     const closeEdit = () => setEditing(false);
     
+    
+
+    
     if (!show) return null;
 
     return ReactDOM.createPortal(
-        <div onClick={close} className="flex flex-col fixed top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 justify-center items-center bg-black bg-opacity-30 m-0 h-full w-full z-2">
+        <div onClick={() => {close(); closeEdit();}} className="flex flex-col fixed top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 justify-center items-center bg-black bg-opacity-30 m-0 h-full w-full z-2">
             <div onClick={e => e.stopPropagation()} className="flex flex-col rounded-2xl items-center fixed z-2 h-2/4 w-2/4 shadow-sm shadow-neutral-800 bg-neutral-900 ">
                 <div className="flex justify-between items-center border-b border-neutral-700 px-5 h-16 w-full absolute mt-0 z-4 ">
                     <h2 className="text-white rubic">
                         Edit Task
                     </h2>
-                    <button onClick={close} className="flex items-center text-white bg-neutral-700 hover:bg-red-600 hover:scale-110 rounded-2xl duration-300 p-2 w-fit">
+                    <button onClick={() => {close(); closeEdit();}} className="flex items-center text-white bg-neutral-700 hover:bg-red-600 hover:scale-110 rounded-2xl duration-300 p-2 w-fit">
                         <XMarkIcon className="w-6" />
                     </button>
                 </div>
@@ -80,7 +83,7 @@ function Modal({ show, close, order }) {
                     </div>
                 </div>
                 <div className="flex justify-between items-center mb-0 h-16 w-full px-5 py-3 text-white">
-                    <button onClick={close} className="px-4 py-2 rounded-2xl bg-neutral-700 duration-300 hover:bg-red-600 hover:scale-110">
+                    <button onClick={() => {close(); closeEdit();}} className="px-4 py-2 rounded-2xl bg-neutral-700 duration-300 hover:bg-red-600 hover:scale-110">
                         Cancel
                     </button>
                     <button onClick={close} className="px-4 py-2 rounded-2xl bg-neutral-700 duration-300 hover:bg-blue-600 hover:scale-110">

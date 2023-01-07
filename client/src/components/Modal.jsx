@@ -4,12 +4,8 @@ import { XMarkIcon } from '@heroicons/react/24/solid';
 import { useState } from 'react';
 
 function Modal({ show, close, order }) {
-    const progress = ["Not Started", "In Progress", "Completed"];
     const [editing, setEditing] = useState(false);
     const closeEdit = () => setEditing(false);
-    
-    
-
     
     if (!show) return null;
 

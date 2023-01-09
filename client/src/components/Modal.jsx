@@ -2,10 +2,26 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { XMarkIcon } from '@heroicons/react/24/solid';
 import { useState } from 'react';
+import DropDown from './DropDown';
 
 function Modal({ show, close, order }) {
     const [editing, setEditing] = useState(false);
     const closeEdit = () => setEditing(false);
+
+    //Using these arrays as examples they are not permanent.
+    const testUsers = [
+        { name: 'Lorenzo Montero'},
+        { name: 'Bryce Sola'},
+        { name: 'Adesola Ice'},
+        { name: 'Jason Pomba'},
+        { name: 'Carlos Almegro'}
+    ];
+
+    const progress = [
+        { name: 'Not Started'},
+        { name: 'In Progress'},
+        { name: 'Completed'}
+    ];
     
     if (!show) return null;
 
@@ -24,46 +40,36 @@ function Modal({ show, close, order }) {
                     <div className="flex flex-col h-full w-full justify-evenly">
                         <div className="flex items-center justify-evenly text-white">
                             <div>Order</div>
-                            <div className="flex items-center justify-center p-2 border-solid border-2 border-neutral-700 rounded-xl">
+                            <div className="flex items-center justify-center">
                                 {editing ? (
-                                    <input
-                                        className="rounded-xl bg-transparent px-4 text-sm focus:text-white focus:outline-none"
-                                        type="text"
-                                        placeholder="Order" 
-                                    />
+                                    <div className="p-1 rounded-xl border-solid border-2 border-neutral-700 ">
+                                        <input
+                                            className="rounded-xl bg-transparent px-4 text-sm focus:text-white focus:outline-none"
+                                            type="text"
+                                            placeholder="Order" 
+                                        />
+                                    </div>
                                 ) : (
-                                    <div onClick={() => setEditing(true)} className="cursor-pointer">{order}</div>
+                                    <div onClick={() => setEditing(true)} className="flex justify-center hover:bg-neutral-600 duration-200 w-44 px-4 rounded-md cursor-pointer">{order}</div>
                                 )}
                             </div>
                         </div>
                         <div className="flex items-center justify-evenly text-white">
                             <div>Status</div>
-                            <div className="flex items-center justify-center p-2 border-solid border-2 border-neutral-700 rounded-xl">
-                                <input
-                                    className="rounded-xl bg-transparent px-4 text-sm focus:text-white focus:outline-none"
-                                    type="text"
-                                    placeholder="Drop Down" 
-                                />
+                            <div className="flex items-center justify-center w-44">
+                                <DropDown data={progress}/>
                             </div>
                         </div>
                         <div className="flex items-center justify-evenly text-white">
                             <div>Owner</div>
-                            <div className="flex items-center justify-center p-2 border-solid border-2 border-neutral-700 rounded-xl">
-                                <input
-                                    className="rounded-xl bg-transparent px-4 text-sm focus:text-white focus:outline-none"
-                                    type="text"
-                                    placeholder="Drop Down" 
-                                />
+                            <div className="flex items-center justify-center w-44">
+                                <DropDown data={testUsers}/>
                             </div>
                         </div>
                         <div className="flex items-center justify-evenly text-white">
                             <div>Assigned</div>
-                            <div className="flex items-center justify-center p-2 border-solid border-2 border-neutral-700 rounded-xl">
-                                <input
-                                    className="rounded-xl bg-transparent px-4 text-sm focus:text-white focus:outline-none"
-                                    type="text"
-                                    placeholder="Drop Down" 
-                                />
+                            <div className="flex items-center justify-center w-44">
+                                <DropDown data={testUsers}/>
                             </div>
                         </div>
                         <div className="flex items-center justify-evenly text-white">

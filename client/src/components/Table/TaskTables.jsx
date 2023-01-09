@@ -44,6 +44,12 @@ const TaskTables = ({title, order, status, owner, assigned, subsystem}) => {
                             <td className="text-gray-400 px-5">
                                 {owner}
                             </td>
+                            <td className="text-gray-400 px-5">
+                                {assigned}
+                            </td>
+                            <td className="text-gray-400 px-5">
+                                {subsystem}
+                            </td>
                         </tr>
                         <Modal 
                             show={show}

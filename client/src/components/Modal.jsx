@@ -13,7 +13,7 @@ function Modal({ show, close, order }) {
         { name: 'Lorenzo Montero'},
         { name: 'Bryce Sola'},
         { name: 'Adesola Ice'},
-        { name: 'Jason Pomba'},
+        { name: 'Jason Pombo'},
         { name: 'Carlos Almegro'}
     ];
 

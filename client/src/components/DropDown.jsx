@@ -22,7 +22,31 @@ const DropDown = ({data}) => {
                         leaveTo="opacity-0"
                     >
                         <Listbox.Options className="absolute max-h-60 w-full overflow-auto rounded-xl bg-neutral-600">
+                            {data.map((data, dataIndex) => (
+                                <Listbox.Option
+                                    key={dataIndex}
+                                    className={({active}) => 
+                                        `relative select-none py-2 px-4 ${
+                                        active ? ' bg-stone-200 text-black' : 'text-white'
+                                        }`
+                                    }
+                                    value={data}
+                                >
+                                    {({ selected }) => (
+                                        <>
+                                            <span className={`block truncate ${selected ? 'font-medium' : 'font-normal'}`}>
+                                                {data.name}
+                                            </span>
+                                            {selected ? (
+                                                <span className="">
+                                                    <CheckIcon className="w-6"/>
+                                                </span>
+                                            ) : null}
+                                        </>
+                                    )}
 
+                                </Listbox.Option>
+                            ))}
                         </Listbox.Options>
                     </Transition>
                 </div>

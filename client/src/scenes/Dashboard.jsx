@@ -12,7 +12,9 @@ const Dashboard = () => {
             title="Your Tasks"
             order="Add Props"
             status="Finished"
-            owner="N/A"
+            assigned="Lorenzo"
+            owner="Carlos"
+            subsystem="IDK"
           />
         </div> 
       </div>

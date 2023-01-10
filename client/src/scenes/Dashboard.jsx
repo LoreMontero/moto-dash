@@ -17,9 +17,11 @@ const Dashboard = () => {
         <div className="flex justify-around">
           <TaskTables
             title="Your Tasks"
-            name="Add Props"
+            order="Add Props"
             status="Finished"
-            file="N/A"
+            assigned="Lorenzo"
+            owner="Carlos"
+            subsystem="IDK"
           />
         </div> 
 

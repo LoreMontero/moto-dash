@@ -6,10 +6,10 @@ const DropDown = ({data}) => {
     const [selected, setSelected] = useState(data[0]);
 
     return (
-        <div className="fixed w-44 hover:bg-neutral-600 duration-200 px-4 rounded-md">
+        <div className="fixed w-44 hover:bg-neutral-600 duration-200 rounded-md">
             <Listbox value={selected} onChange={setSelected}>
                 <div className="relative">
-                    <Listbox.Button className="flex justify-evenly  w-full rounded-xl">
+                    <Listbox.Button className="flex justify-around w-full rounded-xl">
                             <span>{selected.name}</span>
                             <span className="flex justify-center items-center">
                                 <ChevronDownIcon className="w-6"/>
@@ -21,7 +21,7 @@ const DropDown = ({data}) => {
                         leaveFrom="opacity-100"
                         leaveTo="opacity-0"
                     >
-                        <Listbox.Options className="absolute max-h-60 w-full overflow-auto rounded-xl bg-neutral-600">
+                        <Listbox.Options className="absolute max-h-60 w-full overflow-auto py-1 mt-2 rounded-xl bg-neutral-600">
                             {data.map((data, dataIndex) => (
                                 <Listbox.Option
                                     key={dataIndex}
@@ -33,16 +33,16 @@ const DropDown = ({data}) => {
                                     value={data}
                                 >
                                     {({ selected }) => (
-                                        <>
+                                        <div>
                                             <span className={`block truncate ${selected ? 'font-medium' : 'font-normal'}`}>
                                                 {data.name}
                                             </span>
                                             {selected ? (
                                                 <span className="">
-                                                    <CheckIcon className="w-6"/>
+                                                    <CheckIcon className="w-6" aria-hidden="true"/>
                                                 </span>
                                             ) : null}
-                                        </>
+                                        </div>
                                     )}
 
                                 </Listbox.Option>

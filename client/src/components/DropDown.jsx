@@ -44,7 +44,6 @@ const DropDown = ({data}) => {
                                             ) : null}
                                         </div>
                                     )}
-
                                 </Listbox.Option>
                             ))}
                         </Listbox.Options>

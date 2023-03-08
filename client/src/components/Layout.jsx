@@ -14,31 +14,23 @@ const Layout = () => {
     return (
         <div className="flex font-sans back">
             {login !== true ?
-             <>
-             <Sidebar />
-                <Routes>
-                    <Route path="/" element={<Dashboard />}/>
-                    <Route path="/Workspace" element={<Workspace />}/>
-                    <Route path="/Inbox" element={<Inbox />}/>
-                    <Route path="/Events" element={<Events />}/>
-                    <Route path="/Order" element={<Order />}/>
-                    
-                </Routes>
-            </>
-             :
-            <>
-                <Routes>
-                    <Route path = "/" element = {<Login/>}/>
-                </Routes>
-            </>
-            
+                <>
+                    <Sidebar />
+                    <Routes>
+                        <Route path="/" element={<Dashboard />}/>
+                        <Route path="/Workspace" element={<Workspace />}/>
+                        <Route path="/Inbox" element={<Inbox />}/>
+                        <Route path="/Events" element={<Events />}/>
+                        <Route path="/Order" element={<Order />}/>       
+                    </Routes>
+                </>
+                :
+                <>
+                    <Routes>
+                        <Route path = "/" element = {<Login/>}/>
+                    </Routes>
+                </>
             }
-            
-            
-
-            
-            
-            
         </div>
   );
 }
